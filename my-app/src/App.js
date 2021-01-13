@@ -8,13 +8,15 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import About from './components/about-us.js';
 import Mission from './components/mission.js';
+import Version from './components/versions.js';
+import Setup from './components/setup.js';
 
 
 
 class App extends React.Component {
   render() {
     const description="Deliver the fastest possible assistance to people in need.";
-     
+    let steps = {step_1: "Set device passcode", step_2: "Set voice recognizer", step_3: "Set fingerprint"};
     return (
       <div>
         <Grid
@@ -56,44 +58,10 @@ class App extends React.Component {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <Paper elevation={2}>
-              <Accordion>
-                <AccordionSummary>
-                  <Typography>
-                    <h1> Versions </h1> <p>*click here*</p>
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                    <ul>
-                      <li> Intelliband 0.5 15 GB </li>
-                      <li> Intelliband 1.5 32 GB </li>
-                      <li> Intelliband 2.0 64 GB </li>
-                    </ul>
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </Paper>
+            <Version />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <Paper elevation={2}>
-              <Accordion>
-                <AccordionSummary>
-                  <Typography>
-                    <h1> Device Setup </h1> <p>*click here*</p>
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                    <ol>
-                      <li> 1. Set device passcode </li>
-                      <li> 2. Set voice recognizer </li>
-                      <li> 3. Set fingerprint </li>
-                    </ol>
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </Paper>
+            <Setup steps={steps}/>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Button variant="contained" color="primary" onClick={() => { alert('IOS 6+ and higher, Android 8.0 and higher')}}>
@@ -154,56 +122,56 @@ class App extends React.Component {
                 <p>
                   Learn more about logins and its benefits.
                 </p>
-                <a href="http://localhost:3000/">Learn more ></a>
+                <a href="http://localhost:3000/">Learn more </a>
                 <h3>
                   Inteliband Products
                 </h3>
                 <p>
                 Find out how to get additional technical support and hardware service options for your Inteliband products.
                 </p>
-                <a href="http://localhost:3000/">Learn more ></a>
+                <a href="http://localhost:3000/">Learn more </a>
                 <h3>
                   Repair and Services
                 </h3>
                 <p>
                   See all your repair and services options based on your product and location.
                 </p>
-                <a href="http://localhost:3000/">Learn more ></a>
+                <a href="http://localhost:3000/">Learn more </a>
                 <h3>
                   Repair Status
                 </h3>
                 <p>
                 Quickly and easily get the status of one or all of your repairs.
                 </p>
-                <a href="http://localhost:3000/">Learn more ></a>
+                <a href="http://localhost:3000/">Learn more </a>
                 <h3>
                   Job Opportunities
                 </h3>
                 <p>
                 Find current openings, college jobs, internships, and more.
                 </p>
-                <a href="http://localhost:3000/">Learn more ></a>
+                <a href="http://localhost:3000/">Learn more </a>
                 <h3>
                 Media and Analyst Info
                 </h3>
                 <p>
                 Get press releases, media contacts, and more.
                 </p>
-                <a href="http://localhost:3000/">Learn more ></a>
+                <a href="http://localhost:3000/">Learn more </a>
                 <h3>
                 Email Subscriptions
                 </h3>
                 <p>
                 Update your email address or change your subscription status.
                 </p>
-                <a href="http://localhost:3000/">Learn more ></a>
+                <a href="http://localhost:3000/">Learn more </a>
                 <h3>
                 User Groups
                 </h3>
                 <p>
                 Mix and mingle with other Inteliband Users in your area.
                 </p>
-                <a href="http://localhost:3000/">Learn more ></a>
+                <a href="http://localhost:3000/">Learn more </a>
               </Typography>
               </Paper>
           </Grid>
