@@ -13,6 +13,8 @@ import Mission from './components/mission.js';
 
 class App extends React.Component {
   render() {
+    const description="Deliver the fastest possible assistance to people in need.";
+     
     return (
       <div>
         <Grid
@@ -30,7 +32,7 @@ class App extends React.Component {
             <About />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <Mission />
+            <Mission description={description} />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Paper elevation={2}>
