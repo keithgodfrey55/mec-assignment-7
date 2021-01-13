@@ -7,6 +7,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import About from './components/about-us.js';
+import Mission from './components/mission.js';
 
 
 
@@ -29,14 +30,7 @@ class App extends React.Component {
             <About />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <Paper elevation={2}>
-              <Typography>
-                <h1>Mission Statement</h1>
-                <p>
-                  Deliver the fastest possible assistance to people in need.
-                </p>
-              </Typography>
-            </Paper>
+            <Mission />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Paper elevation={2}>
